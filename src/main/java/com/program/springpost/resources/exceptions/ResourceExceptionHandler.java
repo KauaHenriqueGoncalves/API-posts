@@ -13,7 +13,7 @@ import java.time.Instant;
 public class ResourceExceptionHandler {
 
     @ExceptionHandler(ObjectNotFoundException.class)
-    public ResponseEntity<StandardError> ObjectNotFoundException(ObjectNotFoundException e, HttpServletRequest request){
+    public ResponseEntity<StandardError> objectNotFoundException(ObjectNotFoundException e, HttpServletRequest request){
         Instant timestamp = Instant.now();
         HttpStatus status = HttpStatus.NOT_FOUND;
         String error = "Not Found";

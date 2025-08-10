@@ -1,10 +1,14 @@
 package com.program.springpost.dto;
 
+import com.program.springpost.domain.Post;
 import com.program.springpost.domain.User;
 import org.springframework.beans.BeanUtils;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 public class UserDto implements Serializable {
     @Serial
